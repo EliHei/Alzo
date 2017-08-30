@@ -1,0 +1,16 @@
+library(Biobase)
+library(GEOquery)
+library(limma)
+library(plyr)
+library(reshape2)
+library(DESeq2)
+library(ggplot2)
+library(data.table)
+library(reshape2)
+library(ggplot2)
+library(pheatmap)
+
+setwd("E:/edu/term 2/advnc bio/report/python/")
+
+data = read.table("cor.csv")
+pheatmap(t(data))
